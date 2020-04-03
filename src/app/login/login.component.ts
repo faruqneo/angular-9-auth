@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
   get formControls() { return this.authForm.controls; }
 
   signIn() {
+    // console.log(this.authForm)
     this.isSubmitted = true;
     if (this.authForm.invalid) {
       return;
